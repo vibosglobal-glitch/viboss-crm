@@ -1,0 +1,17 @@
+node_modules
+.next
+.git
+.env
+.env.local
+.env.*
+*.md
+.vscode
+.idea
+.agent
+nul
+*.csv
+*.ps1
+test-*.js
+test-*.ts
+src/middleware.ts.bak
+tsconfig.tsbuildinfo

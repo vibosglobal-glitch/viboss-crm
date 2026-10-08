@@ -1,0 +1,23 @@
+{
+    "name": "V!BOS Sales CRM",
+    "short_name": "V!BOS",
+    "description": "Sales CRM for Vibos Global",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FBFAFF",
+    "theme_color": "#9667E0",
+    "icons": [
+        {
+            "src": "/vibos-favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/vibos-favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
