@@ -5,6 +5,10 @@ import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 
+if (!process.env.DATABASE_URL) {
+  console.warn("⚠️ [Prisma] DATABASE_URL is not set in environment! If running on Vercel, please configure DATABASE_URL in Vercel Project Settings > Environment Variables.");
+}
+
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL || 'postgres://postgres:postgres@localhost:5432/postgres',
 });

@@ -14,8 +14,11 @@ A modern full-stack sales CRM for Vibos Global built with Next.js, Express, Pris
 
 ## Deployment: Vercel & Supabase
 1. **Database**: Supabase PostgreSQL (`https://zxbwqkwpuqpbahzealaq.supabase.co`)
-   - `DATABASE_URL=postgresql://postgres:Vibossglobal%402027@db.zxbwqkwpuqpbahzealaq.supabase.co:5432/postgres`
-   *(Note: The `@` symbol in `vibosglobal@2026` must be URL-encoded as `%40` in the PostgreSQL connection string).*
+   - **Vercel / Serverless (IPv4 Pooler - Recommended)**:
+     `DATABASE_URL=postgresql://postgres.zxbwqkwpuqpbahzealaq:Vibossglobal%402027@aws-0-ap-northeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true`
+   - **Direct Connection**:
+     `DIRECT_URL=postgresql://postgres:Vibossglobal%402027@db.zxbwqkwpuqpbahzealaq.supabase.co:5432/postgres`
+   *(Note: The `@` symbol in `Vibossglobal@2027` must be URL-encoded as `%40` in the PostgreSQL connection string).*
 2. **Platform**: Vercel (Next.js serverless architecture with unified `/api/[...route]` handler)
 3. **Repository**: `https://github.com/vibosglobal-glitch/viboss-crm.git`
 
